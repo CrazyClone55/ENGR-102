@@ -46,7 +46,7 @@ key = letter1 + letter2 + letter3 + letter4 + letter5
 key = key*5
 
 
-hiddenMessage = "zilhpzsyucavkzbf"
+hiddenMessage = "zsyucavqojhpwomv"
 key = key[:len(hiddenMessage)]
 
 hiddenMessage = list(hiddenMessage)
@@ -63,7 +63,7 @@ for i in range(len(hiddenMessage)):
     revealedMessage[i] = (hiddenMessage[i] - key[i])%26
     revealedMessage[i] = dict[revealedMessage[i]]
 
+message = "".join(revealedMessage)
 
-
-print(revealedMessage)
+print(message)
 print(key)
